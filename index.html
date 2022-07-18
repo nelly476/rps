@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>RPS</title>
+  </head>
+  <body>
+    <script>
+      let playerSelection = prompt("Choose smth", "rock").toLowerCase();
+      let textArray = ["rock", "paper", "scissors"];
+      let getComputerChoice =
+        textArray[Math.floor(Math.random() * textArray.length)];
+
+      alert(getComputerChoice);
+
+      if (getComputerChoice === "rock" && playerSelection === "paper") {
+        alert("You win!");
+      } else if (getComputerChoice === "paper" && playerSelection === "rock") {
+        alert("You loose!");
+      } else if (
+        getComputerChoice === "paper" &&
+        playerSelection === "scissors"
+      ) {
+        alert("You win!");
+      } else if (
+        getComputerChoice === "scissors" &&
+        playerSelection === "paper"
+      ) {
+        alert("You loose");
+      } else if (
+        getComputerChoice === "scissors" &&
+        playerSelection === "rock"
+      ) {
+        alert("You win!");
+      } else if (
+        getComputerChoice === "rock" &&
+        playerSelection === "scissors"
+      ) {
+        alert("You loose!");
+      } else {
+        alert("Try again");
+      }
+    </script>
+  </body>
+</html>
