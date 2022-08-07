@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>RPS</title>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="game.js"></script>
+    <div id="game">
+      <h1 class="gameText" id="playerText">Player:</h1>
+      <h1 class="gameText" id="computerText">Computer:</h1>
+      <h1 class="gameText" id="resultText">Result:</h1>
+
+      <button class="choiceBtn">Rock</button>
+      <button class="choiceBtn">Paper</button>
+      <button class="choiceBtn">Scissors</button>
+      <div class="score">
+        <div id="scoreText">Score:</div>
+        <div id="computerWon"></div>
+        <div id="playerWon"></div>
+        <div id="finish"></div>
+      </div>
+    </div>
+    <script src="TEST.js" defer></script>
   </body>
 </html>

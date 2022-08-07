@@ -1,0 +1,26 @@
+body {
+  font-family: monospace, sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(90, 58, 158, 0.531);
+  padding: 25px;
+  border: 7px solid antiquewhite;
+  border-radius: 6px;
+}
+
+.score {
+  margin-top: 15px;
+  row-gap: 15px;
+}
+
+.gameText {
+  color: rgba(244, 18, 161, 0.955);
+}
+#playerText {
+  color: beige;
+}
+
+#computerText {
+  color: rgba(7, 34, 56, 0.864);
+}
